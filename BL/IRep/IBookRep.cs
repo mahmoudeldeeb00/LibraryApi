@@ -10,7 +10,7 @@ namespace Api_Project.BL.IRep
     public interface IBookRep
     {
 
-        public ICollection<BookModel> GetAllBooks(int page);
+        public ICollection<BookModel> GetAllBooks();
         public string AddNewBook(BookModel model);
         public BookModel GetBookById(int Id);
         public ICollection<BookModel> SearchInBooks(string Word);

@@ -20,7 +20,7 @@ namespace Api_Project.Controllers
             _authiService = aservice;
         }
         [HttpPost("register")]
-        public async Task<IActionResult> RegisterAsync([FromForm] RegisterModel model)
+        public async Task<IActionResult> RegisterAsync( RegisterModel model)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -31,7 +31,7 @@ namespace Api_Project.Controllers
             return Ok(result);
         }
         [HttpPost("Token")]
-        public async Task<IActionResult> GetTokenAsync([FromForm] TokenModel model)
+        public async Task<IActionResult> GetTokenAsync( TokenModel model)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -43,7 +43,7 @@ namespace Api_Project.Controllers
         }
 
         [HttpPost("AddRole")]
-        public async Task<IActionResult> AddRole([FromForm] AddRoleModel model)
+        public async Task<IActionResult> AddRole( AddRoleModel model)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -52,16 +52,7 @@ namespace Api_Project.Controllers
             return Ok(result);
         }
 
-        [HttpGet("getwork")]
-        [Authorize]
-        public IActionResult Working()
-        {
-            return Ok("api working succefuly");
-        }
-
-
-
-
+        
 
     }
 }

@@ -18,9 +18,11 @@ namespace Api_Project.DAL.Entities
         public DateTime BirthDay { get; set; }
 
         public string Details { get; set; }
+        public string PictureSrc { get; set; }
 
 
-      
+
+
         public int? CityId { get; set; }
         [ForeignKey("CityId")]
         public City City { get; set; }

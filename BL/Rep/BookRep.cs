@@ -116,7 +116,20 @@ namespace Api_Project.BL.Rep
            
         }
 
-        public ICollection<BookModel> GetAllBooks(int page) => _mapper.Map<List<BookModel>>(_db.Books.ToList().Skip(--page*5).Take(5));
+        public ICollection<BookModel> GetAllBooks()
+        {
+            var list = new List<BookModel>();
+
+            foreach (var item in _db.Books.Include(a=>a.Author).Include(b=>b.BookType).ToList())
+            {
+                var model = _mapper.Map<BookModel>(item);
+                model.AuthorName = item.Author.Name;
+                model.BookTypeName = item.BookType.Name;
+                list.Add(model);
+
+            };
+            return list;
+        }
        
 
         public BookModel GetBookById(int Id) => _mapper.Map<BookModel>(_db.Books.FirstOrDefault(f => f.Id == Id));

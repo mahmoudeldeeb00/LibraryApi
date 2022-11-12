@@ -1,6 +1,7 @@
 ﻿using Api_Project.BL.IRep;
 using Api_Project.DAL.DataBase;
 using Api_Project.DAL.Entities;
+using Api_Project.Helpers;
 using Api_Project.Models;
 using AutoMapper;
 using System;
@@ -22,9 +23,21 @@ namespace Api_Project.BL.Rep
         }
         public string AddAuthor(AuthorModel model)
         {
-            
-            _db.Authors.Add(_mapper.Map<Author>(model));
-           return _db.SaveChanges()==1?"Good" : "Author not saved in data Base";
+            try
+            {
+                var author = _mapper.Map<Author>(model);
+              
+                _db.Authors.Add(author);
+
+                _db.SaveChanges();
+                return "Good";
+            }
+            catch
+            {
+                return "Author not saved in data Base";
+            }
+           
+       
         }
 
         public string DeleteAuthor(int AuthorId)
@@ -58,11 +71,16 @@ namespace Api_Project.BL.Rep
             }
         }
 
-        public ICollection<AuthorModel> GetAllAuthors(int page)
+        public ICollection<AuthorModel> GetAllAuthors()
         {
-            var authorList = _mapper.Map<List<AuthorModel>>(_db.Authors.Skip(--page * 5).Take(5).ToList());
+            var authorList = _mapper.Map<List<AuthorModel>>(_db.Authors.ToList());
             foreach (var item in authorList)
+            {
+
                 item.CityName = _db.Cities.Where(w => w.Id == item.CityId).Select(s => s.Name).FirstOrDefault();
+                if (item.PictureSrc is null)
+                    item.PictureSrc = "Default.jpg";
+            }
             return authorList;
         }
       
@@ -70,6 +88,7 @@ namespace Api_Project.BL.Rep
         public AuthorModel GetAuthorById(int AuthorId) => _mapper.Map<AuthorModel>(_db.Authors.FirstOrDefault(f => f.Id == AuthorId));
 
         public ICollection<BookModel> GetBooksToAuthor(int AuhtorId) => _mapper.Map<List<BookModel>>(_db.Books.Where(w => w.AuthorId == AuhtorId).ToList());
-
+        public List<City> cities() => _db.Cities.ToList();
     }
+
 }

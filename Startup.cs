@@ -88,6 +88,10 @@ namespace Api_Project
             services.AddScoped<IBookRep, BookRep>();
             services.AddScoped<IAuthorRep, AuthorRep>();
             services.AddScoped<ILibraryRep, LibraryRep>();
+            services.AddScoped<SelectHelper>();
+           
+
+
             #endregion 
 
             services.AddAutoMapper(x => x.AddProfile(new DomainProfile()));
@@ -102,12 +106,12 @@ namespace Api_Project
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             // configure cors
-            //app.UseCors(options =>
-            //options.AllowAnyMethod()
-            //.AllowAnyHeader()
-            //.WithOrigins("http://127.0.0.1:5500")
+            app.UseCors(options =>
+            options.AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowAnyOrigin()
 
-            //);
+            );
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

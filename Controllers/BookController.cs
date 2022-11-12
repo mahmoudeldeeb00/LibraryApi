@@ -32,10 +32,10 @@ namespace Api_Project.Controllers
                
         }
 
-        [HttpGet("View Books ")]
-        public IActionResult ViewBooks(int page = 1 )
+        [HttpGet("View Books")]
+        public IActionResult ViewBooks()
         {
-            var booklist = _book.GetAllBooks(page);
+            var booklist = _book.GetAllBooks();
             return Ok(booklist);
         }
 

@@ -69,7 +69,7 @@ namespace Api_Project.BL.Rep
         }
 
         public ICollection<LibraryModel> GetAllLibraries(int Page) {
-           var result =  _mapper.Map<List<LibraryModel>>(_db.Libraries.ToList().Skip(--Page*5).Take(5));
+           var result =  _mapper.Map<List<LibraryModel>>(_db.Libraries.ToList().Skip(--Page*50).Take(50));
 
             foreach(var item in result)
             {

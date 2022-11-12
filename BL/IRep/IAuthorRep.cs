@@ -10,11 +10,12 @@ namespace Api_Project.BL.IRep
    public interface IAuthorRep
     {
         public string AddAuthor(AuthorModel model);
-        public ICollection<AuthorModel> GetAllAuthors(int page);
+        public ICollection<AuthorModel> GetAllAuthors( );
         public string EditAuthor(int AuthorId, AuthorModel NewAuthor);
         public string DeleteAuthor(int AuthorId);
         public AuthorModel GetAuthorById(int AuthorId);
         public ICollection<BookModel> GetBooksToAuthor(int AuhtorId);
+        public List<City> cities();
 
     }
 }

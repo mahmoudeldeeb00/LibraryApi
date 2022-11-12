@@ -24,16 +24,17 @@ namespace Api_Project.Controllers
             _author = Author;
         }
         [HttpGet("View Authors")]
-        public IActionResult ViewAuthors(int page=1)
+        public IActionResult ViewAuthors()
         {
-            var AuthorsList = _author.GetAllAuthors(page);
+            var AuthorsList = _author.GetAllAuthors();
             return Ok(AuthorsList);
            
         }
 
-        [Authorize(Roles="Admin")]
+       [Authorize(Roles="Admin")]
+       
         [HttpPost("Add Author")]
-        public IActionResult AddAuthor([FromForm] AuthorModel model)
+        public IActionResult AddAuthor(AuthorModel model)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -68,7 +69,8 @@ namespace Api_Project.Controllers
         [HttpGet("Get Author Books")]
         public IActionResult GetAuthorBooks(int Id) => Ok(_author.GetBooksToAuthor(Id));
 
-
+        [HttpGet("Cities")]
+        public IActionResult GetCities() => Ok(_author.cities());
 
 
     }

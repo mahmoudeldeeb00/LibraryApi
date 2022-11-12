@@ -18,9 +18,12 @@ namespace Api_Project.Models
         [Required(ErrorMessage = "Book Type is Required")]
         public int? BookTypeId { get; set; }
         [Required(ErrorMessage = "Author is Required")]
+        public string BookTypeName { get; set; }
 
         public int AuthorId { get; set; }
-       
-     
+        public string AuthorName { get; set; }
+
+
+
     }
 }
