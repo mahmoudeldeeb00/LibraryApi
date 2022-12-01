@@ -14,7 +14,7 @@ namespace Api_Project.BL.IRep
         public string AddNewBook(BookModel model);
         public BookModel GetBookById(int Id);
         public ICollection<BookModel> SearchInBooks(string Word);
-        public ICollection<BookModel> GetBooksCheckedToUser(string UserId);
+        public ICollection<LibraryBookCheckedModel> GetBooksCheckedToUser(string UserId);
         public string EditBook(int BookId, BookModel NewBook);
         public string DeleteBook(int BookId);
         public int CheckBook(string UserId , int BookId , int LibraryId);

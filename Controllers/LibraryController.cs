@@ -22,7 +22,7 @@ namespace Api_Project.Controllers
             this._library = library;
         }
         [HttpGet("View libraries")]
-        public IActionResult ViewLibraries(int Page=1) => Ok(_library.GetAllLibraries(Page));
+        public IActionResult ViewLibraries(int Page=1) => Ok(_library.GetAllLibraries());
 
         [Authorize(Roles ="Admin")]
         [HttpPost("Add Library")]
@@ -44,14 +44,14 @@ namespace Api_Project.Controllers
        
         [Authorize(Roles = "Admin")]
         [HttpPut("Edit Library")]
-        public IActionResult EditLibrary(int Id, [FromForm] LibraryModel model)
+        public IActionResult EditLibrary([FromQuery]int Id, [FromBody] LibraryModel model)
         {
             var result = _library.EditLibrary(Id, model);
             return result == "Good" ? Ok("Library Editted Succefully ") : BadRequest(result)  ;
         }
       
         [HttpGet("View All Books to one library")]
-        public IActionResult ViewLibraryBooks(int LibraryId ,int Page = 1) => Ok(_library.GetBooksInLibrary(LibraryId, Page));
+        public IActionResult ViewLibraryBooks([FromQuery]int LibraryId ,int Page = 1) => Ok(_library.GetBooksInLibrary(LibraryId));
 
         [HttpGet("View Checked  Books In Library")]
         public IActionResult ViewCheckedLibraryBooks(int LibraryId) => Ok(_library.GetBooksCheckedInLibrary(LibraryId));

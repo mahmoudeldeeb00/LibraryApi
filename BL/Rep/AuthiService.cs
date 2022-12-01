@@ -135,7 +135,21 @@ namespace Api_Project.BL.Rep
             var result = await _userManager.AddToRoleAsync(user, model.Role);
             return result.Succeeded ? "User added succeessfully " : "failed to add User In this role ";
 
+        }        
+        public LibraryUser getuserinfo(string userName)
+        {
+            var user = _userManager.FindByNameAsync(userName).Result;
+            if (user is null)
+                return new LibraryUser { UserName = " User " };
+            return user;
         }
+        public List<string> GetRolesToUser(string userName)
+        {
+            var user =  _userManager.FindByNameAsync(userName).Result;
+            var roles =   _userManager.GetRolesAsync(user).Result.ToList();
+            return roles; 
+        }
+
 
     }
 }

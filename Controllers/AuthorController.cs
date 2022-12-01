@@ -45,9 +45,9 @@ namespace Api_Project.Controllers
 
         [Authorize(Roles = "Admin")]
         [HttpDelete("Delete Author")]
-        public IActionResult DeleteAuthor(int AuthorId)
+        public IActionResult DeleteAuthor([FromQuery]int Id)
         {
-           var result =  _author.DeleteAuthor(AuthorId);
+           var result =  _author.DeleteAuthor(Id);
             return result == "Good"? Ok("Author Deleted Succefuly "):BadRequest(result);
 
         }
@@ -55,11 +55,11 @@ namespace Api_Project.Controllers
 
         [Authorize(Roles = "Admin")]
         [HttpPut("Edit Model")]
-        public IActionResult EditAuthor(int AuthorId , [FromForm]AuthorModel model)
+        public IActionResult EditAuthor([FromQuery]int Id , [FromBody]AuthorModel model)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            var result =  _author.EditAuthor(AuthorId, model);
+            var result =  _author.EditAuthor(Id, model);
             return result=="Good" ? Ok("Book Edited Succefully"):BadRequest(result);
         }
 

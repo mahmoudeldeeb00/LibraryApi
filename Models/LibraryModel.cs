@@ -20,6 +20,8 @@ namespace Api_Project.Models
         [Required]
        
         public int CityId { get; set; }
+        public string CityName { get; set; }
+
         public ICollection<BookModel> Books { get; set; }
 
 

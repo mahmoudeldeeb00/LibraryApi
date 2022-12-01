@@ -9,8 +9,8 @@ namespace Api_Project.BL.IRep
 {
    public interface ILibraryRep
     {
-        public ICollection<LibraryModel> GetAllLibraries(int Page);
-        public ICollection<BookModel> GetBooksInLibrary(int LibraryId,int Page);
+        public ICollection<LibraryModel> GetAllLibraries();
+        public ICollection<BookModel> GetBooksInLibrary(int LibraryId);
         public ICollection<BookModel> GetBooksCheckedInLibrary(int LibraryId);
         public string AddLibrary(LibraryModel model);
         public string EditLibrary(int LibraryId, LibraryModel NewOne);

@@ -27,7 +27,27 @@ namespace Api_Project.Helpers
                 return "Default.jpg";
             }
 
+        }
+        public static bool DeleteOldAuthorPic(string picName)
+        {
+            try
+            {
+                string folderPath = "D:\\angular demos\\Library demo\\library\\src\\assets\\author pictures";
+                
+                string FinalPath = Path.Combine(folderPath, picName);
+                FileInfo file = new FileInfo(FinalPath);
+               if (file.Exists)
+                {
+                    file.Delete();
+                    return true;
+                }
 
+                return false;
+            }
+            catch
+            {
+                return false;
+            }
 
         }
     }

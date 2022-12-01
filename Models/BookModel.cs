@@ -17,12 +17,13 @@ namespace Api_Project.Models
         public int PageNumbers { get; set; }
         [Required(ErrorMessage = "Book Type is Required")]
         public int? BookTypeId { get; set; }
-        [Required(ErrorMessage = "Author is Required")]
+      
         public string BookTypeName { get; set; }
-
+        [Required(ErrorMessage = "Author is Required")]
         public int AuthorId { get; set; }
         public string AuthorName { get; set; }
-
+        public string LibraiesFoundIn { get; set; }
+        public List<LibraryModel> LibrariesContainBook { get; set; }
 
 
     }

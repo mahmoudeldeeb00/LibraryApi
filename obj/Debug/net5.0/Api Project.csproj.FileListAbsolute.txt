@@ -71,3 +71,4 @@ D:\Projects\Api\Library\Api Project\Api Project\bin\Debug\net5.0\Microsoft.Exten
 D:\Projects\Api\Library\Api Project\Api Project\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 D:\Projects\Api\Library\Api Project\Api Project\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 D:\Projects\Api\Library\Api Project\Api Project\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Debug\net5.0\Newtonsoft.Json.dll

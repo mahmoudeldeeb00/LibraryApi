@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace Api_Project.Controllers
@@ -20,9 +21,9 @@ namespace Api_Project.Controllers
             _db = db; 
         }
         [HttpGet("Cities")]
-        public IActionResult GetCities() =>Ok( _db.Cities.ToList());
+        public IActionResult GetCities() =>Ok( _db.Cities.OrderBy(o=>o.Name).ToList());
         [HttpGet("BookTypes")]
-        public IActionResult GetBookTypes() => Ok(_db.BookTypes.ToList());
+        public IActionResult GetBookTypes() => Ok(_db.BookTypes.OrderBy(o => o.Name).ToList());
 
   
         [HttpPost("SaveFile")]
@@ -39,6 +40,7 @@ namespace Api_Project.Controllers
             }
             return BadRequest("no file saved");
         }
+     
 
     }
 }

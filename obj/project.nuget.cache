@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GuNXWvp9kh+1ALs4MpcrIDcmyTG+r4TExwgbtl6eOFOAyhWlyLbjGcFcw9wCe9AMiArYKEbEYmCTk+EGOkIK+w==",
+  "dgSpecHash": "CwB4KMVIBCovueYpJA00xC896v6ZFs7iJs+qy23v3jSMV2wrFQ/GVMkwc1XT9Ypm78uvVodReQkJhd1rEAg5zQ==",
   "success": true,
   "projectFilePath": "D:\\Projects\\Api\\Library\\Api Project\\Api Project\\Api Project.csproj",
   "expectedPackageFiles": [
@@ -51,6 +51,7 @@
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",

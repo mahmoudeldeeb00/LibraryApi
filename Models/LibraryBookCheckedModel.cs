@@ -18,5 +18,11 @@ namespace Api_Project.Models
      
         public bool CheckFinished { get; set; } = false;
 
+        public string BookName { get; set; }
+        public string LibraryName { get; set; }
+
+
+
+
     }
 }

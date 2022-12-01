@@ -1,4 +1,5 @@
 ﻿using Api_Project.BL.IRep;
+using Api_Project.DAL.Entities;
 using Api_Project.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -6,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace Api_Project.Controllers
@@ -52,7 +54,33 @@ namespace Api_Project.Controllers
             return Ok(result);
         }
 
-        
+        [HttpGet("getCurrentUserInfromation")]
+        public IActionResult getCurrentUserInfromation()
+        {
+            try
+            {
+                var userName = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+                return Ok(_authiService.getuserinfo(userName));
+            }
+            catch
+            {
+                return Ok(new LibraryUser { UserName = "User" }); 
+            }
+           
+        }
+        [HttpGet("getCurrentUserRoles")]
+        public IActionResult getCurrentUserRoles()
+        {
+            try
+            {
+                var userName = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+                return Ok(_authiService.GetRolesToUser(userName));
+            }
+            catch
+            {
+                return Ok(new List<string> { "User not found " });
+            }
 
+        }
     }
 }

@@ -68,8 +68,19 @@ namespace Api_Project.BL.Rep
           
         }
 
-        public ICollection<LibraryModel> GetAllLibraries(int Page) {
-           var result =  _mapper.Map<List<LibraryModel>>(_db.Libraries.ToList().Skip(--Page*50).Take(50));
+        public ICollection<LibraryModel> GetAllLibraries() {
+            var result = new List<LibraryModel>();
+            var entities = _db.Libraries
+                .Include(i => i.City)
+                .OrderBy(o=>o.Name)
+                .ToList();
+            foreach(var item in entities)
+            {
+                var model = _mapper.Map<LibraryModel>(item);
+                model.CityName = item.City.Name;
+                result.Add(model);
+            }
+         
 
             foreach(var item in result)
             {
@@ -82,7 +93,7 @@ namespace Api_Project.BL.Rep
 
         public ICollection<BookModel> GetBooksCheckedInLibrary(int LibraryId) =>_mapper.Map<List<BookModel>>(_db.LibraryBooksChecked.Where(w => w.LibraryId == LibraryId && w.CheckFinished == false).Select(s => s.Book).ToList());
 
-        public ICollection<BookModel> GetBooksInLibrary(int LibraryId,int Page) => _mapper.Map<List<BookModel>>(_db.BookLibraries.Where(w => w.LibraryId == LibraryId).Select(s => s.Book).ToList().Skip(--Page*5).Take(5));
+        public ICollection<BookModel> GetBooksInLibrary(int LibraryId) => _mapper.Map<List<BookModel>>(_db.BookLibraries.Where(w => w.LibraryId == LibraryId).Select(s => s.Book).ToList());
        
     }
 }

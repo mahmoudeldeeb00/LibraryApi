@@ -23,7 +23,7 @@ namespace Api_Project.Controllers
         [Authorize(Roles = "Admin")]
 
         [HttpPost("Add New Book")]
-        public IActionResult AddNewBook([FromBody] BookModel book)
+        public IActionResult AddNewBook( BookModel book)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -43,12 +43,12 @@ namespace Api_Project.Controllers
         public IActionResult CheckBook(string UserId, int BookId, int LibraryId)
         {
            var result = _book.CheckBook(UserId, BookId, LibraryId);
-            return result != 0 ? Ok("book Checked Succesfully and his number is " + result.ToString() ) : BadRequest("User or library or Book are not found ");
+            return result != 0 ? Ok("book Checked Succesfully and his number is " + result.ToString() ) : Ok("You already checked or User or library or Book are not found ");
 
         }
         
         [HttpPost("Finish The Check")]
-        public IActionResult FinishTheCheck(int CheckId)
+        public IActionResult FinishTheCheck([FromBody]int CheckId)
         {
             var result = _book.FinishTheCheck(CheckId);
             return result=="Good"? Ok("Check Finished Succesfully"):BadRequest(result);
@@ -62,7 +62,7 @@ namespace Api_Project.Controllers
         }
         [Authorize(Roles = "Admin")]
         [HttpPut("Edit Book")]
-        public IActionResult EditBook (int BookId , BookModel model)
+        public IActionResult EditBook ([FromQuery]int BookId , [FromBody]BookModel model)
         {
             var result = _book.EditBook(BookId, model);           
             return result == "Good" ? Ok("Book edited Succefully") : BadRequest(result);
@@ -71,7 +71,7 @@ namespace Api_Project.Controllers
         public IActionResult ViewOneBookById(int Id) => Ok(_book.GetBookById(Id));
        
         [HttpGet("Books Checked To User")]
-        public IActionResult BooksCheckedToUser(string UserId) => Ok(_book.GetBooksCheckedToUser(UserId));
+        public IActionResult BooksCheckedToUser([FromQuery]string UserId) => Ok(_book.GetBooksCheckedToUser(UserId));
 
         [HttpGet("Search In Books")]
         public IActionResult SearchBooks(string word) => Ok(_book.SearchInBooks(word));
