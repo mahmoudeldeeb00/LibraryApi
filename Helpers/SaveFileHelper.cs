@@ -13,7 +13,8 @@ namespace Api_Project.Helpers
         {
             try
             {
-                string folderPath = "D:\\angular demos\\Library demo\\library\\src\\assets\\author pictures";
+               
+                string folderPath = Directory.GetCurrentDirectory() + "/wwwroot/author pictures";
                 string FileName = Guid.NewGuid().ToString() + pic.FileName;
                 string FinalPath = Path.Combine(folderPath, FileName);
                 using (var stream = new FileStream(FinalPath, FileMode.Create))
@@ -32,7 +33,7 @@ namespace Api_Project.Helpers
         {
             try
             {
-                string folderPath = "D:\\angular demos\\Library demo\\library\\src\\assets\\author pictures";
+                string folderPath = Directory.GetCurrentDirectory() + "/wwwroot/author pictures";
                 
                 string FinalPath = Path.Combine(folderPath, picName);
                 FileInfo file = new FileInfo(FinalPath);

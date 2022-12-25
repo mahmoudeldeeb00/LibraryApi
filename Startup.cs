@@ -32,6 +32,7 @@ namespace Api_Project
         }
 
         public IConfiguration Configuration { get; }
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -40,7 +41,18 @@ namespace Api_Project
 
             services.Configure<JWT>(Configuration.GetSection("JWT"));
             //configure cors
-        //    services.AddCors();
+           //services.AddCors();
+            services.AddCors(options =>
+            {
+                options.AddPolicy(MyAllowSpecificOrigins,
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:4200")
+                                     .AllowAnyMethod()
+                                     .AllowAnyHeader()
+                                     .AllowCredentials();
+                    });
+            });
             services.AddDbContext<DbContainer>(opt => opt.UseSqlServer(Configuration.GetConnectionString("LibraryDb")));
             //configure Identity 
             #region identity 
@@ -106,12 +118,9 @@ namespace Api_Project
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             // configure cors
-            app.UseCors(options =>
-            options.AllowAnyMethod()
-            .AllowAnyHeader()
-            .AllowAnyOrigin()
-
-            );
+            app.UseCors(MyAllowSpecificOrigins);
+          
+            //) ;
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -124,7 +133,8 @@ namespace Api_Project
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
-
+            app.UseStaticFiles();
+            app.UseFileServer();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

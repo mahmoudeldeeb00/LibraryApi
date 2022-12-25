@@ -1,0 +1,63 @@
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\appsettings.Development.json
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\appsettings.json
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Api Project.exe
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Api Project.deps.json
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Api Project.runtimeconfig.json
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Api Project.runtimeconfig.dev.json
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Api Project.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\ref\Api Project.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Api Project.pdb
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\AutoMapper.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Humanizer.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.Data.SqlClient.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.EntityFrameworkCore.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.EntityFrameworkCore.Design.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.Extensions.DependencyInjection.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.Extensions.Identity.Core.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.Extensions.Identity.Stores.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.Extensions.Options.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.Extensions.Primitives.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.Identity.Client.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.IdentityModel.Abstractions.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.IdentityModel.Logging.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.IdentityModel.Protocols.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.IdentityModel.Tokens.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.OpenApi.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Newtonsoft.Json.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Swashbuckle.AspNetCore.Swagger.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\System.Configuration.ConfigurationManager.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\System.Diagnostics.DiagnosticSource.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\System.IdentityModel.Tokens.Jwt.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\System.Runtime.Caching.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\System.Security.Cryptography.ProtectedData.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.Data.SqlClient.SNI.dll
+D:\Projects\Api\Library\Api Project\Api Project\bin\Release\net5.0\win-x64\Microsoft.Data.SqlClient.SNI.pdb
+D:\Projects\Api\Library\Api Project\Api Project\obj\Release\net5.0\win-x64\Api Project.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Api\Library\Api Project\Api Project\obj\Release\net5.0\win-x64\Api Project.AssemblyInfoInputs.cache
+D:\Projects\Api\Library\Api Project\Api Project\obj\Release\net5.0\win-x64\Api Project.AssemblyInfo.cs
+D:\Projects\Api\Library\Api Project\Api Project\obj\Release\net5.0\win-x64\Api Project.csproj.CoreCompileInputs.cache
+D:\Projects\Api\Library\Api Project\Api Project\obj\Release\net5.0\win-x64\Api Project.MvcApplicationPartsAssemblyInfo.cs
+D:\Projects\Api\Library\Api Project\Api Project\obj\Release\net5.0\win-x64\Api Project.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\Api\Library\Api Project\Api Project\obj\Release\net5.0\win-x64\staticwebassets\Api Project.StaticWebAssets.Manifest.cache
+D:\Projects\Api\Library\Api Project\Api Project\obj\Release\net5.0\win-x64\staticwebassets\Api Project.StaticWebAssets.xml
+D:\Projects\Api\Library\Api Project\Api Project\obj\Release\net5.0\win-x64\scopedcss\bundle\Api Project.styles.css
+D:\Projects\Api\Library\Api Project\Api Project\obj\Release\net5.0\win-x64\Api Project.RazorTargetAssemblyInfo.cache
+D:\Projects\Api\Library\Api Project\Api Project\obj\Release\net5.0\win-x64\Api Project.csproj.CopyComplete
+D:\Projects\Api\Library\Api Project\Api Project\obj\Release\net5.0\win-x64\Api Project.dll
+D:\Projects\Api\Library\Api Project\Api Project\obj\Release\net5.0\win-x64\ref\Api Project.dll
+D:\Projects\Api\Library\Api Project\Api Project\obj\Release\net5.0\win-x64\Api Project.pdb
+D:\Projects\Api\Library\Api Project\Api Project\obj\Release\net5.0\win-x64\Api Project.genruntimeconfig.cache
