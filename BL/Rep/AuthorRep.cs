@@ -84,7 +84,7 @@ namespace Api_Project.BL.Rep
             foreach (var item in authorList)
             {
 
-                item.CityName = _db.Cities.Where(w => w.Id == item.CityId).Select(s => s.Name).FirstOrDefault();
+                item.CityName = _db.Cities.Where(w => w.Id == item.CityId).Select(s => s.CityName).FirstOrDefault();
                 if (item.PictureSrc is null)
                     item.PictureSrc = "Default.jpg";
             }
@@ -95,7 +95,7 @@ namespace Api_Project.BL.Rep
         public AuthorModel GetAuthorById(int AuthorId) {
             var entity = _db.Authors.Include(i => i.City).FirstOrDefault(f => f.Id == AuthorId);
             var model = _mapper.Map<AuthorModel>(entity);
-            model.CityName = entity.City.Name;
+            model.CityName = entity.City.CityName;
             model.Books = GetBooksToAuthor((int)model.Id);
             return model;
         }

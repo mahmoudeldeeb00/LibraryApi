@@ -21,7 +21,7 @@ namespace Api_Project.Controllers
             _db = db; 
         }
         [HttpGet("Cities")]
-        public IActionResult GetCities() =>Ok( _db.Cities.OrderBy(o=>o.Name).ToList());
+        public IActionResult GetCities() =>Ok( _db.Cities.OrderBy(o=>o.CityName).ToList());
         [HttpGet("BookTypes")]
         public IActionResult GetBookTypes() => Ok(_db.BookTypes.OrderBy(o => o.Name).ToList());
 

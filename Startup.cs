@@ -2,6 +2,7 @@ using Api_Project.BL.IRep;
 using Api_Project.BL.Rep;
 using Api_Project.DAL.DataBase;
 using Api_Project.DAL.Entities;
+using Api_Project.DAL.Seeds;
 using Api_Project.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -16,6 +17,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi.Writers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,10 +32,8 @@ namespace Api_Project
         {
             Configuration = configuration;
         }
-
         public IConfiguration Configuration { get; }
         readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -101,6 +101,8 @@ namespace Api_Project
             services.AddScoped<IAuthorRep, AuthorRep>();
             services.AddScoped<ILibraryRep, LibraryRep>();
             services.AddScoped<SelectHelper>();
+            services.AddScoped<Logger>();
+            services.AddTransient<DataSeed>();
            
 
 
@@ -108,15 +110,60 @@ namespace Api_Project
 
             services.AddAutoMapper(x => x.AddProfile(new DomainProfile()));
 
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Api_Project", Version = "v1" });
-            });
+
+#region Swagger 
+services.AddSwaggerGen(c => {
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "Library Project",
+        Version = "v1"
+    });
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer 1safsfsdfdfd\"",
+    });
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement {
+        {
+            new OpenApiSecurityScheme {
+                Reference = new OpenApiReference {
+                    Type = ReferenceType.SecurityScheme,
+                        Id = "Bearer"
+                }
+            },
+            new string[] {}
+        }
+    });
+});
+#endregion
+            
+           
+     
+
+
+
+          
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+    /////////////////////////// Seeding Data ///////////////////////////
+            using var scope = app.ApplicationServices.CreateScope();
+            var Services =scope.ServiceProvider;
+            var seed = Services.GetRequiredService<DataSeed>();
+            try{
+                    seed.Seed();
+            }catch{}
+
+
+
             // configure cors
             app.UseCors(MyAllowSpecificOrigins);
           
@@ -125,6 +172,9 @@ namespace Api_Project
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api_Project v1"));
+            }else{
+                  app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api_Project v1"));
             }
 

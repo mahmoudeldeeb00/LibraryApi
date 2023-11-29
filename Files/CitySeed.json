@@ -1,0 +1,23 @@
+﻿[
+    {"CityId":1,"CityName":"Cairo","CountryId":1},
+    {"CityId":2,"CityName":"Giza","CountryId":1},
+    {"CityId":3,"CityName":"Zamalek","CountryId":1},
+    {"CityId":4,"CityName":"Shebin-Alkom","CountryId":1},
+    {"CityId":5,"CityName":"Alshohadaa","CountryId":1},
+    {"CityId":6,"CityName":"Ramses","CountryId":1},
+    {"CityId":7,"CityName":"Sahel","CountryId":1},
+    {"CityId":8,"CityName":"Gaza","CountryId":2},
+    {"CityId":9,"CityName":"AlKods","CountryId":2},
+    {"CityId":10,"CityName":"Makka","CountryId":3},
+    {"CityId":11,"CityName":"Riyad","CountryId":3},
+    {"CityId":12,"CityName":"Madina","CountryId":3},
+    {"CityId":13,"CityName":"Mansora","CountryId":1},
+    {"CityId":14,"CityName":"Random1","CountryId":3},
+    {"CityId":15,"CityName":"Random2","CountryId":4},
+    {"CityId":16,"CityName":"Random3","CountryId":4},
+    {"CityId":17,"CityName":"Random4","CountryId":4},
+    {"CityId":18,"CityName":"Random5","CountryId":5},
+    {"CityId":19,"CityName":"Random6","CountryId":5},
+    {"CityId":20,"CityName":"Random7","CountryId":6},
+    {"CityId":21,"CityName":"Random8","CountryId":7}
+]

@@ -11,8 +11,10 @@ namespace Api_Project.DAL.Entities
     {
         [Key]
         public int Id { get; set; }
+        public int CityId { get; set; }
+
         [Required]
-        public string Name { get; set; }
+        public string CityName { get; set; }
 
 
         public int CountryId { get; set; }

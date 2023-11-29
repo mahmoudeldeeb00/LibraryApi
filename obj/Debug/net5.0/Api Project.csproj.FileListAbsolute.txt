@@ -72,3 +72,87 @@ D:\Projects\Api\Library\Api Project\Api Project\bin\Debug\net5.0\Microsoft.Exten
 D:\Projects\Api\Library\Api Project\Api Project\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 D:\Projects\Api\Library\Api Project\Api Project\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 D:\Projects\Api\Library\Api Project\Api Project\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Mahmoud Eldeep\Projects\Library-api\obj\Debug\net5.0\Api Project.dll
+D:\Mahmoud Eldeep\Projects\Library-api\obj\Debug\net5.0\Api Project.pdb
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\appsettings.Development.json
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\appsettings.json
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Api Project.StaticWebAssets.xml
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Api Project.exe
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Api Project.deps.json
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Api Project.runtimeconfig.json
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Api Project.runtimeconfig.dev.json
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Api Project.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Api Project.pdb
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\AutoMapper.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Humanizer.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.IdentityModel.Abstractions.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\Api Project.csproj.AssemblyReference.cache
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\Api Project.GeneratedMSBuildEditorConfig.editorconfig
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\Api Project.AssemblyInfoInputs.cache
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\Api Project.AssemblyInfo.cs
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\Api Project.csproj.CoreCompileInputs.cache
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\Api Project.MvcApplicationPartsAssemblyInfo.cs
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\Api Project.MvcApplicationPartsAssemblyInfo.cache
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\scopedcss\bundle\Api Project.styles.css
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\staticwebassets\Api Project.StaticWebAssets.Manifest.cache
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\staticwebassets\Api Project.StaticWebAssets.Pack.cache
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\staticwebassets\msbuild.Api Project.Microsoft.AspNetCore.StaticWebAssets.props
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\staticwebassets\msbuild.build.Api Project.props
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.Api Project.props
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.Api Project.props
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\Api Project.RazorTargetAssemblyInfo.cache
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\Api Project.csproj.CopyComplete
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\Api Project.dll
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\refint\Api Project.dll
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\Api Project.pdb
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\Api Project.genruntimeconfig.cache
+D:\DeepFolder\.NET Projects\Library-api\obj\Debug\net5.0\ref\Api Project.dll
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Files\CitySeed.json
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Files\CountrySeed.json
+D:\DeepFolder\.NET Projects\Library-api\bin\Debug\net5.0\Files\BookType.json

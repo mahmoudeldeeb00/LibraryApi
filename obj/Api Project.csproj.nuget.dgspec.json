@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Api\\Library\\Api Project\\Api Project\\Api Project.csproj": {}
+    "D:\\DeepFolder\\.NET Projects\\Library-api\\Api Project.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Api\\Library\\Api Project\\Api Project\\Api Project.csproj": {
+    "D:\\DeepFolder\\.NET Projects\\Library-api\\Api Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Api\\Library\\Api Project\\Api Project\\Api Project.csproj",
+        "projectUniqueName": "D:\\DeepFolder\\.NET Projects\\Library-api\\Api Project.csproj",
         "projectName": "Api Project",
-        "projectPath": "D:\\Projects\\Api\\Library\\Api Project\\Api Project\\Api Project.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Api\\Library\\Api Project\\Api Project\\obj\\",
+        "projectPath": "D:\\DeepFolder\\.NET Projects\\Library-api\\Api Project.csproj",
+        "packagesPath": "C:\\Users\\TBI PC\\.nuget\\packages\\",
+        "outputPath": "D:\\DeepFolder\\.NET Projects\\Library-api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\TBI PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -94,7 +94,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -106,7 +107,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

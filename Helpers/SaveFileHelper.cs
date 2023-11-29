@@ -14,7 +14,7 @@ namespace Api_Project.Helpers
             try
             {
                
-                string folderPath = Directory.GetCurrentDirectory() + "/wwwroot/author pictures";
+                string folderPath = @"D:\DeepFolder\Angular Projects\Library\library\src\assets\author pictures";
                 string FileName = Guid.NewGuid().ToString() + pic.FileName;
                 string FinalPath = Path.Combine(folderPath, FileName);
                 using (var stream = new FileStream(FinalPath, FileMode.Create))

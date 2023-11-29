@@ -77,7 +77,7 @@ namespace Api_Project.BL.Rep
             foreach(var item in entities)
             {
                 var model = _mapper.Map<LibraryModel>(item);
-                model.CityName = item.City.Name;
+                model.CityName = item.City.CityName;
                 result.Add(model);
             }
          
